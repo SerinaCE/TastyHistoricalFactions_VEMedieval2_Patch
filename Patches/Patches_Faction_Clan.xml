@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- Patch unused clan pawnkinds to not spawn : torch-throwers & lancers -->
+
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/FactionDef[@Name="VFEM2_VikingBase"]/pawnGroupMakers</xpath>
+		<value>
+		   <pawnGroupMakers>
+		      <li>
+		        <!-- Peaceful -->
+		        <kindDef>Peaceful</kindDef>
+		        <options>
+		          <VFEM2_Clan_Peasant>30</VFEM2_Clan_Peasant>
+		          <VFEM2_Thrall>5</VFEM2_Thrall>
+		          <VFEM2_Bowman>3</VFEM2_Bowman>
+		          <VFEM2_Skirmisher>1</VFEM2_Skirmisher>
+		        </options>
+		      </li>
+		      <li>
+		        <kindDef>Trader</kindDef>
+		        <traders>
+		          <VFEM2_Trader>1</VFEM2_Trader>
+		        </traders>
+		        <carriers>
+		          <Muffalo>8</Muffalo>
+		          <Yak>4</Yak>
+		          <Alpaca>2.5</Alpaca>
+		        </carriers>
+		        <guards>
+		          <VFEM2_Thrall>15</VFEM2_Thrall>
+		          <VFEM2_Bowman>10</VFEM2_Bowman>
+		          <VFEM2_Skirmisher>10</VFEM2_Skirmisher>
+		          <VFEM2_Raider>10</VFEM2_Raider>
+		          <VFEM2_HeavyBowman>5</VFEM2_HeavyBowman>
+		        </guards>
+		      </li>
+		      <li>
+		        <kindDef>Settlement</kindDef>
+		        <options>
+		          <VFEM2_Clan_Peasant>25</VFEM2_Clan_Peasant>
+		          <VFEM2_Thrall>20</VFEM2_Thrall>
+		          <VFEM2_Bowman>10</VFEM2_Bowman>
+		          <VFEM2_Skirmisher>15</VFEM2_Skirmisher>
+		          <VFEM2_Raider>10</VFEM2_Raider>
+		          <VFEM2_HeavyBowman>10</VFEM2_HeavyBowman>
+		          <VFEM2_Berserker>3</VFEM2_Berserker>
+		          <VFEM2_Jarl>1</VFEM2_Jarl>
+		        </options>
+		      </li>
+		      <li>
+		        <!-- Normal fights, ranged with melee mix-ins -->
+		        <kindDef>Combat</kindDef>
+		        <commonality>80</commonality>
+		        <options>
+		          <VFEM2_Thrall>10</VFEM2_Thrall>
+		          <VFEM2_Bowman>20</VFEM2_Bowman>
+		          <VFEM2_Skirmisher>10</VFEM2_Skirmisher>
+		          <VFEM2_Raider>5</VFEM2_Raider>
+		          <VFEM2_HeavyBowman>3</VFEM2_HeavyBowman>
+		        </options>
+		      </li>
+		      <li>
+		        <!-- Breacher -->
+		        <kindDef>Combat</kindDef>
+		        <commonality>5</commonality>
+		        <options>
+		          <VFEM2_Thrall>10</VFEM2_Thrall>
+				  <VFEM2_SiegeRaider>5</VFEM2_SiegeRaider>
+		          <VFEM2_Bowman>20</VFEM2_Bowman>
+		          <VFEM2_Skirmisher>10</VFEM2_Skirmisher>
+		          <VFEM2_Raider>5</VFEM2_Raider>
+		          <VFEM2_HeavyBowman>3</VFEM2_HeavyBowman>
+		        </options>
+		      </li>
+		      <li>
+		        <!-- Normal fights, mainly melee -->
+		        <kindDef>Combat</kindDef>
+		        <commonality>100</commonality>
+		        <options>
+		          <VFEM2_Thrall>20</VFEM2_Thrall>
+		          <VFEM2_Bowman>10</VFEM2_Bowman>
+		          <VFEM2_Skirmisher>10</VFEM2_Skirmisher>
+		          <VFEM2_Raider>10</VFEM2_Raider>
+				  <VFEM2_Berserker>3</VFEM2_Berserker>
+		          <VFEM2_HeavyBowman>1</VFEM2_HeavyBowman>
+		        </options>
+		      </li>
+		      <li MayRequire="Ludeon.RimWorld.Ideology">
+		        <kindDef>Miners</kindDef>
+		        <commonality>1</commonality>
+		        <options>
+		          <Miner>1</Miner>
+		        </options>
+		      </li>
+		      <li MayRequire="Ludeon.RimWorld.Ideology">
+		        <kindDef>Hunters</kindDef>
+		        <commonality>1</commonality>
+		        <options>
+		          <Hunter>1</Hunter>
+		        </options>
+		      </li>
+		      <li MayRequire="Ludeon.RimWorld.Ideology">
+		        <kindDef>Loggers</kindDef>
+		        <commonality>1</commonality>
+		        <options>
+		          <Logger>1</Logger>
+		        </options>
+		      </li>
+		      <li MayRequire="Ludeon.RimWorld.Ideology">
+		        <kindDef>Farmers</kindDef>
+		        <commonality>1</commonality>
+		        <options>
+		          <Farmer>1</Farmer>
+		        </options>
+		      </li>
+		    </pawnGroupMakers>
+		</value>
+	</Operation>
+
+</Patch>

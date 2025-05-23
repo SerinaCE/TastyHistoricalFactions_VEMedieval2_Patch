@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/StyleCategoryDef[defName="VFEM2_Viking"]/thingDefStyles</xpath>
+		<value>
+			<li>
+				<thingDef>TA_ArmingSword</thingDef>
+				<styleDef>TA_Sword_viking</styleDef>
+			</li>
+		</value>
+	</Operation>
+
+<!-- 	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[defName="TA_ArmingSword"]/randomStyle/li[@styleDef="TA_Sword_viking"]</xpath>
+	</Operation> -->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/StyleCategoryDef[defName="VFEM2_Viking"]/thingDefStyles</xpath>
+		<value>
+			<li>
+				<thingDef>TA_Greataxe</thingDef>
+				<styleDef>TA_Greataxe_DaneL</styleDef>
+			</li>
+		</value>
+	</Operation>
+
+<!-- 	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[defName="TA_Greataxe"]/randomStyle/li[@styleDef="TA_Greataxe_DaneL"]</xpath>
+	</Operation> -->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/StyleCategoryDef[defName="VFEM2_Viking"]/thingDefStyles</xpath>
+		<value>
+			<li>	
+				<thingDef>TA_Handaxe</thingDef>
+				<styleDef>TA_Handaxe_nordland</styleDef>
+			</li>
+		</value>
+	</Operation>
+
+<!-- 	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[defName="TA_Handaxe"]/randomStyle/li[@styleDef="TA_Handaxe_nordland"]</xpath>
+	</Operation> -->
+
+	<!-- Bill -->
+
+<!-- 	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/StyleCategoryDef[defName="VFEM2_Viking"]/thingDefStyles</xpath>
+		<value>
+			<li>	
+				<thingDef>TA_Handaxe</thingDef>
+				<styleDef>TA_Handaxe_nordland</styleDef>
+			</li>
+		</value>
+	</Operation> -->
+
+
+	<!-- Spear -->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/StyleCategoryDef[defName="VFEM2_Viking"]/thingDefStyles</xpath>
+		<value>
+			<li>	
+				<thingDef>TA_Spear</thingDef>
+				<styleDef>TA_Spear_skall</styleDef>
+			</li>
+		</value>
+	</Operation>	
+
+<!-- 	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[defName="TA_Spear"]/randomStyle/li[@styleDef="TA_Spear_skall"]</xpath>
+	</Operation> -->
+
+	<!-- Shield, in Core ? -->
+
+
+
+</Patch>

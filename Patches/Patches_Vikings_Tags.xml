@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- Viking Apparels tags -->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>
+			Defs/ThingDef[
+	  			defName="Apparel_Pants" or
+	  			defName="Apparel_CollarShirt" or
+	  			defName="TA_Tunic" or
+	  			defName="TA_TunicLong" or
+	  			defName="TA_Dress" or
+	  			defName="TA_Surcoat"
+  			]/apparel/tags
+		</xpath>
+		<value>
+			<li>TA_VikingApparelSkin</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>
+			Defs/ThingDef[
+	  			defName="TA_CloakClosed" or
+	  			defName="TA_CloakSemi" or
+	  			defName="TA_CloakOpen" or
+	  			defName="TA_KidCloak"			  				  			
+  			]/apparel/tags
+		</xpath>
+		<value>
+			<li>TA_VikingApparelShell</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>
+			Defs/ThingDef[
+	  			defName="TA_GambesonCoat"		  				  			
+  			]/apparel/tags
+		</xpath>
+		<value>
+			<li>TA_VikingArmorLight</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>
+			Defs/ThingDef[
+	  			defName="TA_AketonShirt" or
+	  			defName="TA_MailleVest" or
+	  			defName="TA_LamellarVest"
+  			]/apparel/tags
+		</xpath>
+		<value>
+			<li>TA_VikingArmorDecent</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>
+			Defs/ThingDef[
+	  			defName="TA_FurhatNordic" or
+	  			defName="TA_Headscarf"			  				  			
+  			]/apparel/tags
+		</xpath>
+		<value>
+			<li>TA_VikingApparelHat</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>
+			Defs/ThingDef[
+	  			defName="TA_NasalHelm" or
+	  			defName="TA_SpectacleHelm"]/apparel</xpath>
+		<value>
+			<tags>
+				<li>TA_VikingHelmet</li>
+			</tags>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>
+			Defs/ThingDef[
+	  			defName="Apparel_Pants"			  				  			
+  			]/apparel/tags
+		</xpath>
+		<value>
+			<li>TA_VikingApparelBerserker</li>
+		</value>
+	</Operation>
+
+	<!-- Weapons -->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>
+			Defs/ThingDef[
+	  			defName="TA_Seax" or
+	  			defName="TA_Scramasax" or
+	  			defName="TA_Handaxe" or
+	  			defName="TA_Bill"		 	  				  			
+  			]/weaponTags
+		</xpath>
+		<value>
+			<li>TA_VikingWeaponBasic</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>
+			Defs/ThingDef[
+	  			defName="TA_Sword" or
+	  			defName="TA_Spear" or
+	  			defName="TA_Handaxe"		 	  				  			
+  			]/weaponTags
+		</xpath>
+		<value>
+			<li>TA_VikingWeapon</li>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationAdd"> <!-- add early crossbow -->
+		<xpath>
+			Defs/ThingDef[
+	  			defName="Bow_Recurve" or
+	  			defName="Bow_Short"
+  			]/weaponTags
+		</xpath>
+		<value>
+			<li>TA_VikingBasicRanged</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd"> 
+		<xpath>
+			Defs/ThingDef[
+				defName="Pila" or
+	  			defName="TA_Franciska"	 	  				  			
+  			]/weaponTags
+		</xpath>
+		<value>
+			<li>TA_VikingWeaponThrown</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>
+			Defs/ThingDef[
+	  			defName="TA_Shield"	 	  				  			
+  			]/weaponTags
+		</xpath>
+		<value>
+			<li>TA_VikingWeaponShield</li>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>
+			Defs/ThingDef[
+	  			defName="TA_Greataxe"	 	  				  			
+  			]/weaponTags
+		</xpath>
+		<value>
+			<li>TA_VikingWeaponHeavy</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>
+			Defs/ThingDef[
+	  			defName="Bow_Great" or
+	  			defName="TA_SimpleCrossbow"
+  			]/weaponTags
+		</xpath>
+		<value>
+			<li>TA_VikingHeavyRanged</li>
+		</value>
+	</Operation>
+
+
+</Patch>

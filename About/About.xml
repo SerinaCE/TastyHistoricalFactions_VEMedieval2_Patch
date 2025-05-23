@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Tasty Historical Factions - VE Medieval 2 Patch</name>
+	<author>.</author>
+	<url>https://github.com/SerinaCE/TastyArmory-Core</url>
+	<supportedVersions>
+	  <li>1.5</li>
+	</supportedVersions>
+		<packageId>tasty.factionVEM2patch</packageId>
+	<description>stuff</description>
+	<modDependencies>
+		<li>
+			<packageId>OskarPotocki.VFE.Medieval2</packageId>
+			<displayName>Vanilla Factions Expanded - Medieval 2</displayName>
+			<downloadUrl>https://github.com/Vanilla-Expanded/VanillaFactionsExpanded-Medieval2</downloadUrl>
+		</li>
+		<li>
+			<packageId>al9000.highmedieval</packageId>
+			<displayName>Tasty Armory - High Medieval</displayName>
+			<downloadUrl>https://github.com/SerinaCE/TastyArmory-HighMedieval</downloadUrl>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>al9000.highmedieval</li>
+		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+		<li>CETeam.CombatExtended</li>
+	</loadAfter>
+</ModMetaData>

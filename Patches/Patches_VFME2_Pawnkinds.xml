@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- "CLAN" / Norses -->
+
+		<!-- Global -->
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/PawnKindDef[@Name="VFEM2_ClanBase"]/apparelTags</xpath>
+	</Operation>
+
+		<!-- Peasant -->
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/PawnKindDef[defName="VFEM2_Clan_Peasant"]/apparelRequired</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[defName="VFEM2_Clan_Peasant"]</xpath>
+		<value>
+			<apparelTags Inherit="False">
+				<li>TA_VikingApparelHat</li>
+				<li>TA_VikingApparelShell</li>
+				<li>TA_VikingApparelSkin</li>
+			</apparelTags>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="VFEM2_Clan_Peasant"]/weaponTags</xpath>
+		<value>
+			<weaponTags Inherit="False">
+				<li>TA_VikingWeaponBasic</li> 
+			</weaponTags>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="VFEM2_Clan_Peasant"]/weaponMoney</xpath>
+		<value>
+			<weaponMoney>140~220</weaponMoney>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="VFEM2_Clan_Peasant"]/apparelMoney</xpath>
+		<value>
+			<apparelMoney>80~150</apparelMoney>
+		</value>
+	</Operation>
+
+		<!-- Thrall -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="VFEM2_Thrall"]/apparelRequired</xpath>
+		<value>
+			<apparelRequired Inherit="False">
+				<li>TA_Headscarf</li>
+			</apparelRequired>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[defName="VFEM2_Thrall"]</xpath>
+		<value>
+			<apparelTags Inherit="False">
+				<li>TA_VikingApparelSkin</li>
+			</apparelTags>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="VFEM2_Thrall"]/weaponTags</xpath>
+		<value>
+			<weaponTags Inherit="False">
+				<li>TA_VikingWeaponBasic</li>
+			</weaponTags>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="VFEM2_Thrall"]/weaponMoney</xpath>
+		<value>
+			<weaponMoney>140~200</weaponMoney>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="VFEM2_Thrall"]/apparelMoney</xpath>
+		<value>
+			<apparelMoney>50~150</apparelMoney>
+		</value>
+	</Operation>	
+
+	<!-- TO DO => remove torch throwers (remove spawn pawkind in faction def patch) -->
+
+		<!-- Bowman, add seax as patch side-arm -->
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/PawnKindDef[defName="VFEM2_Bowman"]/apparelRequired</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[defName="VFEM2_Bowman"]</xpath>
+		<value>
+			<apparelTags Inherit="False">
+				<li>TA_VikingApparelSkin</li>
+				<li>TA_VikingApparelHat</li>
+			</apparelTags>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="VFEM2_Bowman"]/weaponTags</xpath>
+		<value>
+			<weaponTags Inherit="False">
+				<li>TA_VikingBasicRanged</li>
+			</weaponTags>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="VFEM2_Bowman"]/weaponMoney</xpath>
+		<value>
+			<weaponMoney>140~200</weaponMoney>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="VFEM2_Bowman"]/apparelMoney</xpath>
+		<value>
+			<apparelMoney>120~180</apparelMoney>
+		</value>
+	</Operation>	
+
+		<!-- Skirmisher, add seax as patch side-arm -->
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/PawnKindDef[defName="VFEM2_Skirmisher"]/apparelRequired</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[defName="VFEM2_Skirmisher"]</xpath>
+		<value>
+			<apparelTags Inherit="False">
+				<li>TA_VikingApparelHat</li>
+				<li>TA_VikingApparelSkin</li>
+			</apparelTags>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="VFEM2_Skirmisher"]/weaponTags</xpath>
+		<value>
+			<weaponTags Inherit="False">
+				<li>TA_VikingWeaponThrown</li>
+			</weaponTags>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="VFEM2_Skirmisher"]/weaponMoney</xpath>
+		<value>
+			<weaponMoney>140~200</weaponMoney>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="VFEM2_Skirmisher"]/apparelMoney</xpath>
+		<value>
+			<apparelMoney>120~220</apparelMoney>
+		</value>
+	</Operation>	
+
+	<!-- TODO => remove spearmen, same as above -->
+
+		<!-- Raider, SHIELDS ???? -->
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/PawnKindDef[defName="VFEM2_Raider"]/apparelRequired</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[defName="VFEM2_Raider"]</xpath>
+		<value>
+			<apparelTags Inherit="False">
+				<li>TA_VikingApparelSkin</li>				
+				<li>TA_VikingHelmet</li>
+				<li>TA_VikingArmorLight</li>
+			</apparelTags>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="VFEM2_Raider"]/weaponTags</xpath>
+		<value>
+			<weaponTags Inherit="False">
+				<li>TA_VikingWeapon</li>
+			</weaponTags>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="VFEM2_Raider"]/weaponMoney</xpath>
+		<value>
+			<weaponMoney>140~250</weaponMoney>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="VFEM2_Raider"]/apparelMoney</xpath>
+		<value>
+			<apparelMoney>180~320</apparelMoney>
+		</value>
+	</Operation>
+
+		<!-- Berserker, addchance to wear helmet 50% -->
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/PawnKindDef[defName="VFEM2_Berserker"]/apparelRequired</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[defName="VFEM2_Berserker"]</xpath>
+		<value>
+			<apparelTags Inherit="False">
+				<li>TA_VikingApparelBerserker</li>
+			</apparelTags>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="VFEM2_Berserker"]/weaponTags</xpath>
+		<value>
+			<weaponTags Inherit="False">
+				<li>TA_VikingWeaponHeavy</li>
+			</weaponTags>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="VFEM2_Berserker"]/weaponMoney</xpath>
+		<value>
+			<weaponMoney>240~450</weaponMoney>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="VFEM2_Berserker"]/apparelMoney</xpath>
+		<value>
+			<apparelMoney>120~180</apparelMoney>
+		</value>
+	</Operation>
+
+	<!-- Huskarls -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="VFEM2_SiegeRaider"]/label</xpath>
+		<value>
+			<label>huskarl</label>
+		</value>
+	</Operation>
+
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/PawnKindDef[defName="VFEM2_SiegeRaider"]/apparelRequired</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[defName="VFEM2_SiegeRaider"]</xpath>
+		<value>
+			<apparelTags Inherit="False">
+				<li>TA_VikingApparelSkin</li>
+				<li>TA_VikingHelmet</li>
+				<li>TA_VikingArmorDecent</li>
+			</apparelTags>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="VFEM2_SiegeRaider"]/weaponTags</xpath>
+		<value>
+			<weaponTags Inherit="False">
+				<li>TA_VikingWeapon</li>
+			</weaponTags>
+		</value>
+	</Operation>			
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="VFEM2_SiegeRaider"]/weaponMoney</xpath>
+		<value>
+			<weaponMoney>215~350</weaponMoney>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="VFEM2_SiegeRaider"]/apparelMoney</xpath>
+		<value>
+			<apparelMoney>120~350</apparelMoney>
+		</value>
+	</Operation>
+
+	<!-- Heavy Bowman -->
+
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/PawnKindDef[defName="VFEM2_HeavyBowman"]/apparelRequired</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[defName="VFEM2_HeavyBowman"]</xpath>
+		<value>
+			<apparelTags Inherit="False">
+				<li>TA_VikingHelmet</li>
+				<li>TA_VikingApparelShell</li>
+				<li>TA_VikingArmorLight</li>
+				<li>TA_VikingApparelSkin</li>
+			</apparelTags>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="VFEM2_HeavyBowman"]/weaponTags</xpath>
+		<value>
+			<weaponTags Inherit="False">
+				<li>TA_VikingHeavyRanged</li>
+			</weaponTags>
+		</value>
+	</Operation>
+
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="VFEM2_HeavyBowman"]/weaponMoney</xpath>
+		<value>
+			<weaponMoney>150~350</weaponMoney>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="VFEM2_HeavyBowman"]/apparelMoney</xpath>
+		<value>
+			<apparelMoney>120~350</apparelMoney>
+		</value>
+	</Operation>
+
+
+	<!-- Merchant -->
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/PawnKindDef[defName="VFEM2_Merchant"]/apparelRequired</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[defName="VFEM2_Merchant"]</xpath>
+		<value>
+			<apparelTags Inherit="False">
+				<li>TA_VikingApparelShell</li>
+				<li>TA_VikingApparelHat</li>
+				<li>TA_VikingApparelSkin</li>
+			</apparelTags>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="VFEM2_Merchant"]/weaponTags</xpath>
+		<value>
+			<weaponTags Inherit="False">
+				<li>TA_VikingWeaponBasic</li>
+			</weaponTags>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="VFEM2_Merchant"]/weaponMoney</xpath>
+		<value>
+			<weaponMoney>150~200</weaponMoney>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="VFEM2_Merchant"]/apparelMoney</xpath>
+		<value>
+			<apparelMoney>120~280</apparelMoney>
+		</value>
+	</Operation>
+
+	<!-- Jarl -->
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/PawnKindDef[defName="VFEM2_Jarl"]/apparelRequired</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[defName="VFEM2_Jarl"]</xpath>
+		<value>
+			<apparelTags Inherit="False">
+				<li>TA_VikingHelmet</li>
+				<li>TA_VikingArmorDecent</li>
+			</apparelTags>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="VFEM2_Jarl"]/weaponTags</xpath>
+		<value>
+			<weaponTags Inherit="False">
+				<li>TA_VikingWeapon</li>
+				<li>TA_VikingWeaponHeavy</li>
+			</weaponTags>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="VFEM2_Jarl"]/weaponMoney</xpath>
+		<value>
+			<weaponMoney>250~500</weaponMoney>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="VFEM2_Jarl"]/apparelMoney</xpath>
+		<value>
+			<apparelMoney>220~350</apparelMoney>
+		</value>
+	</Operation>
+
+</Patch>
