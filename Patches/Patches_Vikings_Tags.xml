@@ -148,8 +148,8 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>
 			Defs/ThingDef[
-	  			defName="TA_Shield"	 	  				  			
-  			]/weaponTags
+	  			defName="TA_RoundShield"	 	  				  			
+  			]/apparel/tags
 		</xpath>
 		<value>
 			<li>TA_VikingWeaponShield</li>
