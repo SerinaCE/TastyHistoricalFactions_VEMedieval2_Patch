@@ -128,7 +128,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/PawnKindDef[defName="VFEM2_Bowman"]/apparelMoney</xpath>
 		<value>
-			<apparelMoney>120~180</apparelMoney>
+			<apparelMoney>180~250</apparelMoney>
 		</value>
 	</Operation>	
 
@@ -167,7 +167,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/PawnKindDef[defName="VFEM2_Skirmisher"]/apparelMoney</xpath>
 		<value>
-			<apparelMoney>120~220</apparelMoney>
+			<apparelMoney>180~250</apparelMoney>
 		</value>
 	</Operation>	
 
@@ -209,7 +209,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/PawnKindDef[defName="VFEM2_Raider"]/apparelMoney</xpath>
 		<value>
-			<apparelMoney>180~320</apparelMoney>
+			<apparelMoney>250~350</apparelMoney>
 		</value>
 	</Operation>
 
@@ -295,7 +295,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/PawnKindDef[defName="VFEM2_SiegeRaider"]/apparelMoney</xpath>
 		<value>
-			<apparelMoney>120~350</apparelMoney>
+			<apparelMoney>250~450</apparelMoney>
 		</value>
 	</Operation>
 
@@ -338,7 +338,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/PawnKindDef[defName="VFEM2_HeavyBowman"]/apparelMoney</xpath>
 		<value>
-			<apparelMoney>120~350</apparelMoney>
+			<apparelMoney>250~350</apparelMoney>
 		</value>
 	</Operation>
 
@@ -379,7 +379,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/PawnKindDef[defName="VFEM2_Merchant"]/apparelMoney</xpath>
 		<value>
-			<apparelMoney>120~280</apparelMoney>
+			<apparelMoney>150~350</apparelMoney>
 		</value>
 	</Operation>
 
@@ -419,7 +419,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/PawnKindDef[defName="VFEM2_Jarl"]/apparelMoney</xpath>
 		<value>
-			<apparelMoney>220~350</apparelMoney>
+			<apparelMoney>300~650</apparelMoney>
 		</value>
 	</Operation>
 
